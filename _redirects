@@ -1,0 +1,21 @@
+# Clean URLs (Cloudflare Pages)
+/index.html / 301
+/services.html /services 301
+/resources.html /resources 301
+/schedule-consultation.html /schedule-consultation 301
+/new-client-estimate.html /new-client-estimate 301
+/thank-you.html /thank-you 301
+
+# Service pages
+/bank-reconciliation-services.html /bank-reconciliation-services 301
+/cleanup-bookkeeping-services.html /cleanup-bookkeeping-services 301
+/accounts-payable-services.html /accounts-payable-services 301
+/accounts-receivable-services.html /accounts-receivable-services 301
+/payroll-support-services.html /payroll-support-services 301
+/financial-reporting-services.html /financial-reporting-services 301
+/tax-preparation-support.html /tax-preparation-support 301
+/budgeting-forecasting-services.html /budgeting-forecasting-services 301
+/monthly-bookkeeping-services.html /monthly-bookkeeping-services 301
+
+# Resource nested page
+/resources/quickbooks-accountant-access.html /resources/quickbooks-accountant-access 301

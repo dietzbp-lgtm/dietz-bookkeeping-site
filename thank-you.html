@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Thank You | Dietz Bookkeeping</title>
+<meta name="description" content="Thank you page confirming submission and providing a link to schedule a consultation." />
+<link rel="canonical" href="https://dietz-bookkeeping-site.pages.dev/thank-you" />
+<link rel="stylesheet" href="./styles.css" />
+<script type="application/ld+json">{"@context": "https://schema.org", "@type": "LocalBusiness", "name": "Dietz Bookkeeping", "telephone": "+1-813-419-3475", "email": "Bryan@dietzbookkeeping.com", "address": {"@type": "PostalAddress", "addressRegion": "FL", "addressCountry": "US"}, "areaServed": "Florida, United States", "url": "https://dietz-bookkeeping-site.pages.dev/"}</script>
+
+</head>
+<body>
+
+<header>
+  <div class="container nav">
+    <a class="brand" href="/" aria-label="Dietz Bookkeeping Home">
+      <span class="brand-badge" aria-hidden="true"></span>
+      <span>Dietz Bookkeeping</span>
+    </a>
+    <nav aria-label="Primary">
+      <ul class="navlinks">
+        <li><a class="active" href="/">Home</a></li>
+        <li><a class="" href="/services">Services</a></li>
+        <li><a class="" href="/resources">Resources</a></li>
+        <li><a class="btn btn-primary" href="/schedule-consultation">Schedule Consultation</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+
+<main class="hero">
+  <div class="container hero-inner">
+    <span class="kicker">Submitted</span>
+    <div class="spacer"></div>
+    <h1>Thank you for your submission</h1>
+    <p class="lead">When you’re ready, schedule a consultation so we can review your needs and next steps.</p>
+    <div class="btn-group" style="margin-top:18px">
+      <a class="btn btn-primary" href="https://calendly.com/dietzbookkeeping/30min">Schedule Your Consultation</a>
+      <a class="btn btn-secondary" href="/services">View services</a>
+    </div>
+  </div>
+</main>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div>
+        <h3 style="margin:0 0 8px">Dietz Bookkeeping</h3>
+        <p class="small" style="max-width:520px">Professional bookkeeping support for small businesses in Florida, focused on accuracy, consistent reporting, and practical next steps.</p>
+      </div>
+      <div>
+        <h3 style="margin:0 0 8px">Links</h3>
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="/services">Services</a></li>
+          <li><a href="/resources">Resources</a></li>
+          <li><a href="/schedule-consultation">Schedule Consultation</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 style="margin:0 0 8px">Contact</h3>
+        <ul>
+          <li><a href="tel:8134193475">813-419-3475</a></li>
+          <li><a href="mailto:Bryan@dietzbookkeeping.com">Bryan@dietzbookkeeping.com</a></li>
+          <li>Florida, United States</li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> Dietz Bookkeeping</span>
+      <span>Managed by Bryan Dietz</span>
+    </div>
+  </div>
+</footer>
+<script>document.getElementById("year").textContent=new Date().getFullYear();</script>
+
+
+<div class="ai-fab" aria-live="polite">
+  <button id="aiBtn" class="ai-btn" aria-label="Open assistant" aria-expanded="false">
+    <span class="ai-dot" aria-hidden="true"></span>
+  </button>
+  <div id="aiPanel" class="ai-panel" role="dialog" aria-label="Dietz Bookkeeping assistant">
+    <div class="ai-head">
+      <strong>Assistant</strong>
+      <button id="aiClose" class="btn btn-ghost" style="padding:8px 10px;border-radius:12px" aria-label="Close">Close</button>
+    </div>
+    <div class="ai-body">
+      <div class="ai-msg">
+        <div class="who">Dietz Bookkeeping</div>
+        <div class="bubble">
+          Hi — I can help with bookkeeping questions, explain services, and guide you to the right next step.
+          <div style="height:10px"></div>
+          Common links:
+          <ul style="margin:8px 0 0 18px">
+            <li><a href="/services">View services</a></li>
+            <li><a href="/new-client-estimate">New client estimate</a></li>
+            <li><a href="/schedule-consultation">Schedule a consultation</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="ai-msg">
+        <div class="who">Tip</div>
+        <div class="bubble">If you’re not sure where to start, use the estimate form and share your monthly transaction volume.</div>
+      </div>
+    </div>
+    <div class="ai-actions">
+      <a class="btn btn-secondary" href="/new-client-estimate">Estimate Form</a>
+      <a class="btn btn-primary" href="/schedule-consultation">Schedule</a>
+    </div>
+  </div>
+</div>
+<script src="./assistant.js" defer></script>
+
+</body>
+</html>

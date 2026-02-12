@@ -1,0 +1,11 @@
+# Security headers (Cloudflare Pages)
+/*
+  X-Content-Type-Options: nosniff
+  X-Frame-Options: SAMEORIGIN
+  Referrer-Policy: strict-origin-when-cross-origin
+  Permissions-Policy: geolocation=(), microphone=(), camera=()
+  Content-Security-Policy: default-src 'self' https://calendly.com; frame-src https://calendly.com; img-src 'self' data:; style-src 'self' 'unsafe-inline'; script-src 'self' 'unsafe-inline'; connect-src 'self';
+
+# Cache static assets longer (add /assets later)
+/assets/*
+  Cache-Control: public, max-age=31536000, immutable
